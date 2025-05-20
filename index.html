@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +17,21 @@
             --light-color: #f8f9fa;
             --dark-color: #343a40;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             scroll-behavior: smooth;
         }
-        
+
         .navbar {
             background-color: var(--primary-color) !important;
         }
-        
-        .navbar-brand, .nav-link {
+
+        .navbar-brand,
+        .nav-link {
             color: white !important;
         }
-        
+
         .hero-section {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
@@ -39,18 +41,18 @@
             justify-content: center;
             text-align: center;
         }
-        
+
         .hero-title {
             font-size: 4rem;
             font-weight: 700;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        
+
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
-        
+
         .section-title {
             color: var(--primary-color);
             position: relative;
@@ -58,7 +60,7 @@
             margin-bottom: 30px;
             text-align: center;
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -69,29 +71,29 @@
             height: 3px;
             background-color: var(--secondary-color);
         }
-        
+
         .card {
             transition: transform 0.3s;
             margin-bottom: 20px;
             border: none;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .card:hover {
             transform: translateY(-10px);
         }
-        
+
         .card-img-top {
             height: 200px;
             object-fit: cover;
         }
-        
+
         .highlight-icon {
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 15px;
         }
-        
+
         .gallery-img {
             height: 250px;
             object-fit: cover;
@@ -99,28 +101,28 @@
             cursor: pointer;
             transition: transform 0.3s;
         }
-        
+
         .gallery-img:hover {
             transform: scale(1.05);
         }
-        
+
         .business-card {
             border-left: 5px solid var(--secondary-color);
         }
-        
+
         .facility-item {
             padding: 15px;
             border-bottom: 1px solid #eee;
         }
-        
+
         .facility-item:last-child {
             border-bottom: none;
         }
-        
+
         .person-card {
             text-align: center;
         }
-        
+
         .person-img {
             width: 150px;
             height: 150px;
@@ -130,24 +132,24 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             margin: 0 auto 15px;
         }
-        
+
         footer {
             background-color: var(--dark-color);
             color: white;
             padding: 40px 0;
         }
-        
+
         .social-icon {
             color: white;
             font-size: 1.5rem;
             margin: 0 10px;
             transition: color 0.3s;
         }
-        
+
         .social-icon:hover {
             color: var(--secondary-color);
         }
-        
+
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -166,369 +168,360 @@
             transition: opacity 0.3s;
             z-index: 999;
         }
-        
+
         .back-to-top.visible {
             opacity: 1;
         }
-        
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.2rem;
             }
         }
-        /* From Uiverse.io by satyamchaudharydev */ 
-button {
-  border: none;
-  width: 140px;
-  height: 50px;
-  color: #fff;
-  z-index: 1;
-  display: flex;
-  background: #000;
-  position: relative;
-  cursor: pointer;
-}
 
-button p {
-  margin: 0 auto;
-  align-self: center;
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-}
+        /* From Uiverse.io by satyamchaudharydev */
+        button {
+            border: none;
+            width: 140px;
+            height: 50px;
+            color: #fff;
+            z-index: 1;
+            display: flex;
+            background: #000;
+            position: relative;
+            cursor: pointer;
+        }
 
-button::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  z-index: -1;
-  height: 10%;
-  bottom: 0;
-  clip-path: polygon(
-    0% 74%,
-    4% 75%,
-    8% 76%,
-    11% 77%,
-    15% 78%,
-    20% 78%,
-    25% 77%,
-    32% 77%,
-    37% 75%,
-    40% 74%,
-    43% 74%,
-    46% 73%,
-    52% 72%,
-    57% 72%,
-    65% 74%,
-    66% 75%,
-    71% 78%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
-  background: #8792eb;
-  transition: 0.2s ease;
-}
+        button p {
+            margin: 0 auto;
+            align-self: center;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
 
-button::before {
-  position: absolute;
-  content: "";
-  /*   bottom: 80%; */
-  transform: rotate(180deg);
-  width: 100%;
-  height: 10%;
-  transition: 0.2s ease;
-  /*   bottom:; */
-  z-index: -1;
-  clip-path: polygon(
-    0% 74%,
-    4% 75%,
-    8% 76%,
-    11% 77%,
-    15% 78%,
-    20% 78%,
-    25% 77%,
-    32% 77%,
-    37% 75%,
-    40% 74%,
-    43% 74%,
-    46% 73%,
-    52% 72%,
-    57% 72%,
-    65% 74%,
-    66% 75%,
-    71% 78%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
-  background: #8792eb;
-}
+        button::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            z-index: -1;
+            height: 10%;
+            bottom: 0;
+            clip-path: polygon(0% 74%,
+                    4% 75%,
+                    8% 76%,
+                    11% 77%,
+                    15% 78%,
+                    20% 78%,
+                    25% 77%,
+                    32% 77%,
+                    37% 75%,
+                    40% 74%,
+                    43% 74%,
+                    46% 73%,
+                    52% 72%,
+                    57% 72%,
+                    65% 74%,
+                    66% 75%,
+                    71% 78%,
+                    75% 82%,
+                    81% 86%,
+                    83% 88%,
+                    88% 91%,
+                    90% 94%,
+                    94% 96%,
+                    98% 98%,
+                    100% 100%,
+                    82% 100%,
+                    0 100%);
+            background: #8792eb;
+            transition: 0.2s ease;
+        }
 
-button:hover::after {
-  clip-path: polygon(
-    0 30%,
-    9% 34%,
-    7% 39%,
-    11% 43%,
-    13% 33%,
-    17% 30%,
-    24% 34%,
-    25% 35%,
-    30% 31%,
-    30% 38%,
-    39% 33%,
-    35% 43%,
-    43% 45%,
-    55% 46%,
-    65% 74%,
-    67% 66%,
-    81% 57%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
-  height: 80%;
-}
+        button::before {
+            position: absolute;
+            content: "";
+            /*   bottom: 80%; */
+            transform: rotate(180deg);
+            width: 100%;
+            height: 10%;
+            transition: 0.2s ease;
+            /*   bottom:; */
+            z-index: -1;
+            clip-path: polygon(0% 74%,
+                    4% 75%,
+                    8% 76%,
+                    11% 77%,
+                    15% 78%,
+                    20% 78%,
+                    25% 77%,
+                    32% 77%,
+                    37% 75%,
+                    40% 74%,
+                    43% 74%,
+                    46% 73%,
+                    52% 72%,
+                    57% 72%,
+                    65% 74%,
+                    66% 75%,
+                    71% 78%,
+                    75% 82%,
+                    81% 86%,
+                    83% 88%,
+                    88% 91%,
+                    90% 94%,
+                    94% 96%,
+                    98% 98%,
+                    100% 100%,
+                    82% 100%,
+                    0 100%);
+            background: #8792eb;
+        }
 
-button:hover::before {
-  clip-path: polygon(
-    0 30%,
-    9% 34%,
-    7% 39%,
-    11% 43%,
-    13% 33%,
-    17% 30%,
-    24% 34%,
-    25% 35%,
-    30% 31%,
-    30% 38%,
-    39% 33%,
-    35% 43%,
-    43% 45%,
-    55% 46%,
-    65% 74%,
-    67% 66%,
-    81% 57%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
-  height: 80%;
-}
-/* From Uiverse.io by StealthWorm */ 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 13rem;
-  overflow: hidden;
-  height: 3rem;
-  background-size: 300% 300%;
-  cursor: pointer;
-  backdrop-filter: blur(1rem);
-  border-radius: 5rem;
-  transition: 0.5s;
-  animation: gradient_301 5s ease infinite;
-  border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),
-    linear-gradient(
-      137.48deg,
-      #ffdb3b 10%,
-      #fe53bb 45%,
-      #8f51ea 67%,
-      #0044ff 87%
-    );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
+        button:hover::after {
+            clip-path: polygon(0 30%,
+                    9% 34%,
+                    7% 39%,
+                    11% 43%,
+                    13% 33%,
+                    17% 30%,
+                    24% 34%,
+                    25% 35%,
+                    30% 31%,
+                    30% 38%,
+                    39% 33%,
+                    35% 43%,
+                    43% 45%,
+                    55% 46%,
+                    65% 74%,
+                    67% 66%,
+                    81% 57%,
+                    75% 82%,
+                    81% 86%,
+                    83% 88%,
+                    88% 91%,
+                    90% 94%,
+                    94% 96%,
+                    98% 98%,
+                    100% 100%,
+                    82% 100%,
+                    0 100%);
+            height: 80%;
+        }
 
-#container-stars {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: 0.5s;
-  backdrop-filter: blur(1rem);
-  border-radius: 5rem;
-}
+        button:hover::before {
+            clip-path: polygon(0 30%,
+                    9% 34%,
+                    7% 39%,
+                    11% 43%,
+                    13% 33%,
+                    17% 30%,
+                    24% 34%,
+                    25% 35%,
+                    30% 31%,
+                    30% 38%,
+                    39% 33%,
+                    35% 43%,
+                    43% 45%,
+                    55% 46%,
+                    65% 74%,
+                    67% 66%,
+                    81% 57%,
+                    75% 82%,
+                    81% 86%,
+                    83% 88%,
+                    88% 91%,
+                    90% 94%,
+                    94% 96%,
+                    98% 98%,
+                    100% 100%,
+                    82% 100%,
+                    0 100%);
+            height: 80%;
+        }
 
-strong {
-  z-index: 2;
-  font-family: "Avalors Personal Use";
-  font-size: 12px;
-  letter-spacing: 5px;
-  color: #ffffff;
-  text-shadow: 0 0 4px white;
-}
+        /* From Uiverse.io by StealthWorm */
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 13rem;
+            overflow: hidden;
+            height: 3rem;
+            background-size: 300% 300%;
+            cursor: pointer;
+            backdrop-filter: blur(1rem);
+            border-radius: 5rem;
+            transition: 0.5s;
+            animation: gradient_301 5s ease infinite;
+            border: double 4px transparent;
+            background-image: linear-gradient(#212121, #212121),
+                linear-gradient(137.48deg,
+                    #ffdb3b 10%,
+                    #fe53bb 45%,
+                    #8f51ea 67%,
+                    #0044ff 87%);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
 
-#glow {
-  position: absolute;
-  display: flex;
-  width: 12rem;
-}
+        #container-stars {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.5s;
+            backdrop-filter: blur(1rem);
+            border-radius: 5rem;
+        }
 
-.circle {
-  width: 100%;
-  height: 30px;
-  filter: blur(2rem);
-  animation: pulse_3011 4s infinite;
-  z-index: -1;
-}
+        strong {
+            z-index: 2;
+            font-family: "Avalors Personal Use";
+            font-size: 12px;
+            letter-spacing: 5px;
+            color: #ffffff;
+            text-shadow: 0 0 4px white;
+        }
 
-.circle:nth-of-type(1) {
-  background: rgba(254, 83, 186, 0.636);
-}
+        #glow {
+            position: absolute;
+            display: flex;
+            width: 12rem;
+        }
 
-.circle:nth-of-type(2) {
-  background: rgba(142, 81, 234, 0.704);
-}
+        .circle {
+            width: 100%;
+            height: 30px;
+            filter: blur(2rem);
+            animation: pulse_3011 4s infinite;
+            z-index: -1;
+        }
 
-.btn:hover #container-stars {
-  z-index: 1;
-  background-color: #212121;
-}
+        .circle:nth-of-type(1) {
+            background: rgba(254, 83, 186, 0.636);
+        }
 
-.btn:hover {
-  transform: scale(1.1);
-}
+        .circle:nth-of-type(2) {
+            background: rgba(142, 81, 234, 0.704);
+        }
 
-.btn:active {
-  border: double 4px #fe53bb;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  animation: none;
-}
+        .btn:hover #container-stars {
+            z-index: 1;
+            background-color: #212121;
+        }
 
-.btn:active .circle {
-  background: #fe53bb;
-}
+        .btn:hover {
+            transform: scale(1.1);
+        }
 
-#stars {
-  position: relative;
-  background: transparent;
-  width: 200rem;
-  height: 200rem;
-}
+        .btn:active {
+            border: double 4px #fe53bb;
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            animation: none;
+        }
 
-#stars::after {
-  content: "";
-  position: absolute;
-  top: -10rem;
-  left: -100rem;
-  width: 100%;
-  height: 100%;
-  animation: animStarRotate 90s linear infinite;
-}
+        .btn:active .circle {
+            background: #fe53bb;
+        }
 
-#stars::after {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-}
+        #stars {
+            position: relative;
+            background: transparent;
+            width: 200rem;
+            height: 200rem;
+        }
 
-#stars::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 170%;
-  height: 500%;
-  animation: animStar 60s linear infinite;
-}
+        #stars::after {
+            content: "";
+            position: absolute;
+            top: -10rem;
+            left: -100rem;
+            width: 100%;
+            height: 100%;
+            animation: animStarRotate 90s linear infinite;
+        }
 
-#stars::before {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-  opacity: 0.5;
-}
+        #stars::after {
+            background-image: radial-gradient(#ffffff 1px, transparent 1%);
+            background-size: 50px 50px;
+        }
 
-@keyframes animStar {
-  from {
-    transform: translateY(0);
-  }
+        #stars::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 170%;
+            height: 500%;
+            animation: animStar 60s linear infinite;
+        }
 
-  to {
-    transform: translateY(-135rem);
-  }
-}
+        #stars::before {
+            background-image: radial-gradient(#ffffff 1px, transparent 1%);
+            background-size: 50px 50px;
+            opacity: 0.5;
+        }
 
-@keyframes animStarRotate {
-  from {
-    transform: rotate(360deg);
-  }
+        @keyframes animStar {
+            from {
+                transform: translateY(0);
+            }
 
-  to {
-    transform: rotate(0);
-  }
-}
+            to {
+                transform: translateY(-135rem);
+            }
+        }
 
-@keyframes gradient_301 {
-  0% {
-    background-position: 0% 50%;
-  }
+        @keyframes animStarRotate {
+            from {
+                transform: rotate(360deg);
+            }
 
-  50% {
-    background-position: 100% 50%;
-  }
+            to {
+                transform: rotate(0);
+            }
+        }
 
-  100% {
-    background-position: 0% 50%;
-  }
-}
+        @keyframes gradient_301 {
+            0% {
+                background-position: 0% 50%;
+            }
 
-@keyframes pulse_3011 {
-  0% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-  }
+            50% {
+                background-position: 100% 50%;
+            }
 
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
-  100% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}
+        @keyframes pulse_3011 {
+            0% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            }
 
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            }
 
+            100% {
+                transform: scale(0.75);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -571,13 +564,13 @@ strong {
     </nav>
 
     <!-- Hero Section / Image Carousel -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section" style="background-image: url('https://www.treebo.com/blog/wp-content/uploads/2018/06/The-16-Most-Beautiful-Villages-In-India.jpg');">
         <div class="container">
             <h1 class="hero-title">Welcome to Thottasseriara</h1>
             <p class="hero-subtitle">A beautiful village with rich culture and heritage</p>
             <a href="#about" class="btn btn-primary btn-lg px-4 me-2">Contact</a>
             <a href="#about" class="btn btn-primary btn-lg px-4 me-2">Explore Now</a>
-         <!-- From Uiverse.io by StealthWorm --> 
+            <!-- From Uiverse.io by StealthWorm -->
 
 
         </div>
@@ -585,15 +578,21 @@ strong {
 
     <!-- About the Village -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="container"  style="background-image: url('https://img.freepik.com/premium-photo/beautiful-scenery-morning-beautiful-village-nature-indonesia_1048944-30713663.jpg');">
             <h2 class="section-title">About Thottasseriara</h2>
             <div class="row">
                 <div class="col-lg-6">
                     <h3>Our History</h3>
-                    <p>Thottasseriara is a picturesque village with a rich history dating back centuries. The name "Thottasseriara" is believed to have originated from [explain origin of name]. Our village has maintained its traditional charm while embracing modern development.</p>
-                    <p>The village has a population of approximately [insert population number] people, primarily engaged in [mention primary occupations]. The cultural fabric of Thottasseriara is woven with traditions of [mention cultural aspects like festivals, arts, etc.].</p>
+                    <p>Thottasseriara is a picturesque village with a rich history dating back centuries. The name
+                        "Thottasseriara" is believed to have originated from [explain origin of name]. Our village has
+                        maintained its traditional charm while embracing modern development.</p>
+                    <p>The village has a population of approximately 6000 people, primarily
+                        engaged in Agriculture. The cultural fabric of Thottasseriara is woven with
+                        traditions of Onam, Christmas, Bakrreed, etc</p>
                     <h3 class="mt-4">Cultural Background</h3>
-                    <p>Thottasseriara is known for its vibrant cultural heritage. The village celebrates various festivals throughout the year, including [mention major festivals]. Traditional art forms like [mention any local art forms] are preserved and practiced by the villagers.</p>
+                    <p>Thottasseriara is known for its vibrant cultural heritage. The village celebrates various
+                        festivals throughout the year, including Onam Eid Christmas. Traditional art forms 
+                        are also  preserved and practiced by the villagers.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="card">
@@ -601,9 +600,12 @@ strong {
                             <h5 class="card-title">Location Map</h5>
                             <div class="ratio ratio-16x9">
                                 <!-- Replace with your actual Google Maps embed code -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                                 <a href="https://maps.app.goo.gl/Rp93JA7DBd6ViLC68">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.28427238992!2d75.95120652355679!3d11.092178303293224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64c2e5e556fdb%3A0x7ec9da30f015992a!2sThottasseriyara%2C%20Kannamangalam%2C%20Kerala%20676305!5e0!3m2!1sen!2sin!4v1747728413337!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <p class="card-text mt-3">Thottasseriara is located in [district name], [state name], surrounded by [mention nearby towns or geographical features].</p>
+                            </a>
+                            <p class="card-text mt-3">Thottasseriara is located in Malappuram, Kerale,
+                                surrounded by  many towns and cities</p>
                         </div>
                     </div>
                 </div>
@@ -619,9 +621,13 @@ strong {
                 <div class="col-md-4">
                     <div class="card text-center h-100">
                         <div class="card-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="blue" d="M12 1.586L19.414 9H21v2h-1v9h2v2H2v-2h2v-9H3V9h1.586L12 1.586ZM6 11v9h5v-9H6Zm7 0v9h5v-9h-5Zm3.586-2L12 4.414L7.414 9h9.172Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <path fill="blue"
+                                    d="M12 1.586L19.414 9H21v2h-1v9h2v2H2v-2h2v-9H3V9h1.586L12 1.586ZM6 11v9h5v-9H6Zm7 0v9h5v-9h-5Zm3.586-2L12 4.414L7.414 9h9.172Z" />
+                            </svg>
                             <h5 class="card-title">Arakkal Thamburatty Temple</h5>
-                            <p class="card-text">The ancient Arakkal Temple is the spiritual heart of our village, known for its beautiful architecture and annual festival celebrations.</p>
+                            <p class="card-text">The ancient Arakkal Temple is the spiritual heart of our village, known
+                                for its beautiful architecture and annual festival celebrations.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
@@ -629,9 +635,13 @@ strong {
                 <div class="col-md-4">
                     <div class="card text-center h-100">
                         <div class="card-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="blue" d="M8.142 8.742q-.717 0-1.18-.462T6.5 7.1q0-.865.417-1.61q.418-.744 1.121-1.217L12 1.596l3.962 2.677q.703.473 1.12 1.217q.418.745.418 1.61q0 .717-.463 1.18t-1.18.462H8.143ZM1.5 20.5V8.437q-.45-.218-.725-.588Q.5 7.479.5 7q0-.44.388-1.025Q1.277 5.39 2 4.712q.723.678 1.112 1.263Q3.5 6.56 3.5 7q0 .479-.275.85q-.275.37-.725.587V13.5h3V11q0-.587.39-1.017q.39-.431 1.006-.471h10.208q.615.04 1.006.47q.39.431.39 1.018v2.5h3V8.437q-.45-.218-.725-.588Q20.5 7.479 20.5 7q0-.44.388-1.025q.389-.585 1.112-1.263q.723.678 1.112 1.263Q23.5 6.56 23.5 7q0 .479-.275.85q-.275.37-.725.587V20.5h-8.77V17q0-.71-.51-1.22T12 15.27q-.71 0-1.22.51T10.27 17v3.5H1.5Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <path fill="blue"
+                                    d="M8.142 8.742q-.717 0-1.18-.462T6.5 7.1q0-.865.417-1.61q.418-.744 1.121-1.217L12 1.596l3.962 2.677q.703.473 1.12 1.217q.418.745.418 1.61q0 .717-.463 1.18t-1.18.462H8.143ZM1.5 20.5V8.437q-.45-.218-.725-.588Q.5 7.479.5 7q0-.44.388-1.025Q1.277 5.39 2 4.712q.723.678 1.112 1.263Q3.5 6.56 3.5 7q0 .479-.275.85q-.275.37-.725.587V13.5h3V11q0-.587.39-1.017q.39-.431 1.006-.471h10.208q.615.04 1.006.47q.39.431.39 1.018v2.5h3V8.437q-.45-.218-.725-.588Q20.5 7.479 20.5 7q0-.44.388-1.025q.389-.585 1.112-1.263q.723.678 1.112 1.263Q23.5 6.56 23.5 7q0 .479-.275.85q-.275.37-.725.587V20.5h-8.77V17q0-.71-.51-1.22T12 15.27q-.71 0-1.22.51T10.27 17v3.5H1.5Z" />
+                            </svg>
                             <h5 class="card-title">Juma Masjid</h5>
-                            <p class="card-text">The historic Juma Masjid serves the Muslim community and stands as a symbol of religious harmony in our village.</p>
+                            <p class="card-text">The historic Juma Masjid serves the Muslim community and stands as a
+                                symbol of religious harmony in our village.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
@@ -639,9 +649,13 @@ strong {
                 <div class="col-md-4">
                     <div class="card text-center h-100">
                         <div class="card-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="blue" d="M11 1v2H9v2h2v.98l-5 3.5V12H2v10h20V12h-4V9.48l-5-3.5V5h2V3h-2V1h-2Zm1 6.72l4 2.8V20h-1v-4a3 3 0 1 0-6 0v4H8v-9.48l4-2.8ZM6 20H4v-6h2v6Zm5 0v-4a1 1 0 1 1 2 0v4h-2Zm7 0v-6h2v6h-2Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                <path fill="blue"
+                                    d="M11 1v2H9v2h2v.98l-5 3.5V12H2v10h20V12h-4V9.48l-5-3.5V5h2V3h-2V1h-2Zm1 6.72l4 2.8V20h-1v-4a3 3 0 1 0-6 0v4H8v-9.48l4-2.8ZM6 20H4v-6h2v6Zm5 0v-4a1 1 0 1 1 2 0v4h-2Zm7 0v-6h2v6h-2Z" />
+                            </svg>
                             <h5 class="card-title">St. Marys Church</h5>
-                            <p class="card-text">This beautiful church with its colonial architecture is a center for the Christian community and a peaceful place for prayer.</p>
+                            <p class="card-text">This beautiful church with its colonial architecture is a center for
+                                the Christian community and a peaceful place for prayer.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
@@ -651,9 +665,13 @@ strong {
                 <div class="col-md-4">
                     <div class="card text-center h-100">
                         <div class="card-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20"><path fill="blue" d="M7.5 9.25a5.75 5.75 0 0 1 5.75-5.75h.5a.75.75 0 0 0 0-1.5h-.5A7.25 7.25 0 0 0 6 9.25v1a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0 0 1.5h2.5a2.25 2.25 0 0 0 2.25-2.25v-1Zm6.25-3A3.25 3.25 0 0 0 10.5 9.5v1a4.75 4.75 0 0 1-4.75 4.75h-3a.75.75 0 0 1 0-1.5h3A3.25 3.25 0 0 0 9 10.5v-1a4.75 4.75 0 0 1 4.75-4.75h3.5a.75.75 0 0 1 0 1.5h-3.5Zm.5 2.75a.75.75 0 0 0-.75.75v1A7.25 7.25 0 0 1 6.25 18h-.5a.75.75 0 0 1 0-1.5h.5A5.75 5.75 0 0 0 12 10.75v-1a2.25 2.25 0 0 1 2.25-2.25h3a.75.75 0 0 1 0 1.5h-3Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20">
+                                <path fill="blue"
+                                    d="M7.5 9.25a5.75 5.75 0 0 1 5.75-5.75h.5a.75.75 0 0 0 0-1.5h-.5A7.25 7.25 0 0 0 6 9.25v1a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 0 0 1.5h2.5a2.25 2.25 0 0 0 2.25-2.25v-1Zm6.25-3A3.25 3.25 0 0 0 10.5 9.5v1a4.75 4.75 0 0 1-4.75 4.75h-3a.75.75 0 0 1 0-1.5h3A3.25 3.25 0 0 0 9 10.5v-1a4.75 4.75 0 0 1 4.75-4.75h3.5a.75.75 0 0 1 0 1.5h-3.5Zm.5 2.75a.75.75 0 0 0-.75.75v1A7.25 7.25 0 0 1 6.25 18h-.5a.75.75 0 0 1 0-1.5h.5A5.75 5.75 0 0 0 12 10.75v-1a2.25 2.25 0 0 1 2.25-2.25h3a.75.75 0 0 1 0 1.5h-3Z" />
+                            </svg>
                             <h5 class="card-title">Thottasseriara Streamm</h5>
-                            <p class="card-text">The lifeline of our village, this stream provides water for irrigation and is a scenic spot for enjoying nature.</p>
+                            <p class="card-text">The lifeline of our village, this stream provides water for irrigation
+                                and is a scenic spot for enjoying nature.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
@@ -661,14 +679,18 @@ strong {
                 <div class="col-md-4">
                     <div class="card text-center h-100">
                         <div class="card-body">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 17 17"><path fill="blue" fill-rule="evenodd" d="M8.012 1.062L4.035 8.87L2.709 7.569S-.305 14 .063 14h15.902v-.002l-3.338-7.1l-.983.612l-3.632-6.448zM5.611 7.521L8.062 2.77l2.285 4.081l-.986.67l-1.34-1.288l-2.41 1.288z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 17 17">
+                                <path fill="blue" fill-rule="evenodd"
+                                    d="M8.012 1.062L4.035 8.87L2.709 7.569S-.305 14 .063 14h15.902v-.002l-3.338-7.1l-.983.612l-3.632-6.448zM5.611 7.521L8.062 2.77l2.285 4.081l-.986.67l-1.34-1.288l-2.41 1.288z" />
+                            </svg>
                             <h5 class="card-title">Green Hills</h5>
-                            <p class="card-text">The surrounding hills offer breathtaking views and are popular for trekking and nature photography.</p>
+                            <p class="card-text">The surrounding hills offer breathtaking views and are popular for
+                                trekking and nature photography.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
-             
+
             </div>
         </div>
     </section>
@@ -679,34 +701,47 @@ strong {
             <h2 class="section-title">Photo & Video Gallery</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGO9xPH07fV4B2ZYk1uxB4MofnKNMgpImDA&s" alt="School Managemnt" class="img-fluid gallery-img rounded">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGO9xPH07fV4B2ZYk1uxB4MofnKNMgpImDA&s"
+                        alt="School Managemnt" class="img-fluid gallery-img rounded">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://content3.jdmagicbox.com/comp/malappuram/y5/9999px483.x483.230901022544.r5y5/catalogue/m-i-s-m-up-school-pengattukundil-paramba-malappuram-396isv13cl.jpg" alt="Christmas Celebration" class="img-fluid gallery-img rounded">
+                    <img src="https://content3.jdmagicbox.com/comp/malappuram/y5/9999px483.x483.230901022544.r5y5/catalogue/m-i-s-m-up-school-pengattukundil-paramba-malappuram-396isv13cl.jpg"
+                        alt="Christmas Celebration" class="img-fluid gallery-img rounded">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://content3.jdmagicbox.com/v2/comp/malappuram/g6/9999px483.x483.180731192040.m4g6/catalogue/volpe-occasion-center-abdurahiman-nagar-malappuram-banquet-halls-AEvnD4mlwU.jpg" alt="Auditorium" class="img-fluid gallery-img rounded">
+                    <img src="https://content3.jdmagicbox.com/v2/comp/malappuram/g6/9999px483.x483.180731192040.m4g6/catalogue/volpe-occasion-center-abdurahiman-nagar-malappuram-banquet-halls-AEvnD4mlwU.jpg"
+                        alt="Auditorium" class="img-fluid gallery-img rounded">
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-4">
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4no7-TfD8cvwGkRycGLzy5Z_zCY4hKPSJ8EYkmKbg7sVjlsrymF9nbczKNjeyarJfGCesa1Fim69uq_upIPjSnKQKEBXQesbYKsqATX0Eg7UH-LE-STgq2w2gD660Vp1Wizz-9cb=s1360-w1360-h1020-rw" alt="Temple Fest" class="img-fluid gallery-img rounded">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4no7-TfD8cvwGkRycGLzy5Z_zCY4hKPSJ8EYkmKbg7sVjlsrymF9nbczKNjeyarJfGCesa1Fim69uq_upIPjSnKQKEBXQesbYKsqATX0Eg7UH-LE-STgq2w2gD660Vp1Wizz-9cb=s1360-w1360-h1020-rw"
+                        alt="Temple Fest" class="img-fluid gallery-img rounded">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://content3.jdmagicbox.com/comp/malappuram/l2/9999px483.x483.221121213321.s2l2/catalogue/tiki-taka-soccer-turf-malappuram-children-indoor-activity-centres-ye97jmklwt.jpg" alt="Turf" class="img-fluid gallery-img rounded">
+                    <img src="https://content3.jdmagicbox.com/comp/malappuram/l2/9999px483.x483.221121213321.s2l2/catalogue/tiki-taka-soccer-turf-malappuram-children-indoor-activity-centres-ye97jmklwt.jpg"
+                        alt="Turf" class="img-fluid gallery-img rounded">
                 </div>
-                
+
             </div>
             <div class="row mt-5">
                 <div class="col-md-6">
                     <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JJeh0cOmFHA?si=tPhGr7cN4C3HNV8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/JJeh0cOmFHA?si=tPhGr7cN4C3HNV8o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h5 class="mt-2 text-center">Annual School Festival 2025</h5>
                 </div>
                 <div class="col-md-6">
                     <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Kb2ZRrIy88?si=xfDmFBszHKaEC-ea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_Kb2ZRrIy88?si=xfDmFBszHKaEC-ea"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h5 class="mt-2 text-center">Places to visit</h5>
                 </div>
@@ -723,13 +758,16 @@ strong {
                     <div class="card business-card h-100">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWBLA15Vj6CJv1D08IPgItMNjyMEIXDUnUg&s" class="img-fluid rounded-start h-100" alt="Business Photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWBLA15Vj6CJv1D08IPgItMNjyMEIXDUnUg&s"
+                                    class="img-fluid rounded-start h-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">kambran General Store</h5>
-                                    <p class="card-text"><small class="text-muted"><i class="fas fa-store me-2"></i>General Store</small></p>
-                                    <p class="card-text">Family-run store providing daily essentials since 2000. Fresh produce and household items available.</p>
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fas fa-store me-2"></i>General Store</small></p>
+                                    <p class="card-text">Family-run store providing daily essentials since 2000. Fresh
+                                        produce and household items available.</p>
                                     <p class="card-text"><i class="fas fa-phone me-2"></i>+91 96056 996587</p>
                                 </div>
                             </div>
@@ -740,13 +778,16 @@ strong {
                     <div class="card business-card h-100">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://static.vecteezy.com/system/resources/previews/028/860/201/non_2x/tailor-shop-sale-banner-tailor-tools-and-sewing-machine-vector.jpg" class="img-fluid rounded-start h-100" alt="Business Photo">
+                                <img src="https://static.vecteezy.com/system/resources/previews/028/860/201/non_2x/tailor-shop-sale-banner-tailor-tools-and-sewing-machine-vector.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Village Tailor</h5>
-                                    <p class="card-text"><small class="text-muted"><i class="fas fa-tshirt me-2"></i>Tailoring Service</small></p>
-                                    <p class="card-text">Expert tailoring for traditional and modern clothing. Custom stitching and alterations available.</p>
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fas fa-tshirt me-2"></i>Tailoring Service</small></p>
+                                    <p class="card-text">Expert tailoring for traditional and modern clothing. Custom
+                                        stitching and alterations available.</p>
                                     <p class="card-text"><i class="fas fa-phone me-2"></i>+91 9876543211</p>
                                 </div>
                             </div>
@@ -759,13 +800,16 @@ strong {
                     <div class="card business-card h-100">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://files.yappe.in/place/full/al-raydhan-kuzhi-mandi-1802783.webp" class="img-fluid rounded-start h-100" alt="Business Photo">
+                                <img src="https://files.yappe.in/place/full/al-raydhan-kuzhi-mandi-1802783.webp"
+                                    class="img-fluid rounded-start h-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Al-Raydan Mandi</h5>
-                                    <p class="card-text"><small class="text-muted"><i class="fas fa-utensils me-2"></i>Restaurant</small></p>
-                                    <p class="card-text">Authentic local cuisine served in a traditional setting. Famous for our Al-fahm Mandi.</p>
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fas fa-utensils me-2"></i>Restaurant</small></p>
+                                    <p class="card-text">Authentic local cuisine served in a traditional setting. Famous
+                                        for our Al-fahm Mandi.</p>
                                     <p class="card-text"><i class="fas fa-phone me-2"></i>+91 99464 84821</p>
                                 </div>
                             </div>
@@ -776,13 +820,16 @@ strong {
                     <div class="card business-card h-100">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="https://content.jdmagicbox.com/comp/malappuram/x7/9999px483.x483.180222192939.u3x7/catalogue/auto-gurd-car-accessories-malappuram-9ka17.jpg" class="img-fluid rounded-start h-100" alt="Business Photo">
+                                <img src="https://content.jdmagicbox.com/comp/malappuram/x7/9999px483.x483.180222192939.u3x7/catalogue/auto-gurd-car-accessories-malappuram-9ka17.jpg"
+                                    class="img-fluid rounded-start h-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Auto Guard</h5>
-                                    <p class="card-text"><small class="text-muted"><i class="fas fa-car me-2"></i>Vehicle Repair</small></p>
-                                    <p class="card-text">Complete four-wheeler, accessories sales and  repair services. Expert mechanics with 2+ years experience.</p>
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fas fa-car me-2"></i>Vehicle Repair</small></p>
+                                    <p class="card-text">Complete four-wheeler, accessories sales and repair services.
+                                        Expert mechanics with 2+ years experience.</p>
                                     <p class="card-text"><i class="fas fa-phone me-2"></i>+91 80895 77520</p>
                                 </div>
                             </div>
@@ -801,11 +848,12 @@ strong {
                 <div class="col-md-4">
                     <div class="card person-card h-100">
                         <div class="card-body">
-                            <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020011900201.jpg" alt="Person" class="person-img">
+                            <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020011900201.jpg"
+                                alt="Person" class="person-img">
                             <h5 class="card-title">Aboobacker Master</h5>
                             <p class="card-text text-muted">Block Member </p>
-                            <p class="card-text">He was the the  standing committee chairman 
-                                 & Member in local self GOVT
+                            <p class="card-text">He was the the standing committee chairman
+                                & Member in local self GOVT
                             </p>
                         </div>
                     </div>
@@ -813,7 +861,8 @@ strong {
                 <div class="col-md-4">
                     <div class="card person-card h-100">
                         <div class="card-body">
-                            <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020096302001.jpg" alt="Person" class="person-img">
+                            <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020096302001.jpg"
+                                alt="Person" class="person-img">
                             <h5 class="card-title">Sankaran Chalil</h5>
                             <p class="card-text text-muted">Division Member</p>
                             <p class="card-text">Working as a division member for the progress of the village</p>
@@ -823,7 +872,8 @@ strong {
                 <div class="col-md-4">
                     <div class="card person-card h-100">
                         <div class="card-body">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTseBHTIpKcTn8gJDGMpT_e5bsRvmY_hbgXAw&s" alt="Person" class="person-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTseBHTIpKcTn8gJDGMpT_e5bsRvmY_hbgXAw&s"
+                                alt="Person" class="person-img">
                             <h5 class="card-title">Shamsudheen Cheruvadi</h5>
                             <p class="card-text text-muted">Politician and teacher</p>
                             <p class="card-text">Great Politician and Working as a teacher in village school.</p>
@@ -886,7 +936,8 @@ strong {
                             <div class="facility-item">
                                 <h6>Kottakkal Co-operative Bank - Thottasseriara Branch</h6>
                                 <p class="mb-1">Full-service bank with ATM facility</p>
-                                <p class="mb-1"><i class="fas fa-clock me-2"></i>10:00 AM - 4:00 PM (Mon-Fri), 10AM-1PM (Sat)</p>
+                                <p class="mb-1"><i class="fas fa-clock me-2"></i>10:00 AM - 4:00 PM (Mon-Fri), 10AM-1PM
+                                    (Sat)</p>
                                 <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 91889 22823</p>
                             </div>
                         </div>
@@ -919,19 +970,24 @@ strong {
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">By Road</h5>
-                            <p class="card-text">Thottasseriara is well connected by road. The nearest major town is Kondotty, located 10 km away. Regular bus services are available from Tottasseriara Town.</p>
+                            <p class="card-text">Thottasseriara is well connected by road. The nearest major town is
+                                Kondotty, located 10 km away. Regular bus services are available from Tottasseriara
+                                Town.</p>
                         </div>
                     </div>
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">By Rail</h5>
-                            <p class="card-text">The nearest railway station is Parappanangadi, approximately 20 km from the village. Auto rickshaws and taxis are available from the station.</p>
+                            <p class="card-text">The nearest railway station is Parappanangadi, approximately 20 km from
+                                the village. Auto rickshaws and taxis are available from the station.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">By Air</h5>
-                            <p class="card-text">Caliicut airport is the nearest airport, about 15 km from Thottasseriara. From the airport, you can hire a taxi or take a bus to reach the village.</p>
+                            <p class="card-text">Caliicut airport is the nearest airport, about 15 km from
+                                Thottasseriara. From the airport, you can hire a taxi or take a bus to reach the
+                                village.</p>
                         </div>
                     </div>
                 </div>
@@ -939,19 +995,23 @@ strong {
                     <h4><i class="fas fa-calendar-alt me-2"></i>Best Time to Visit</h4>
                     <div class="card mb-4">
                         <div class="card-body">
-                            <p>The ideal time to visit Thottasseriara is between November and December when the weather is pleasant. The village festival during September is a particularly vibrant time to experience local culture.</p>
+                            <p>The ideal time to visit Thottasseriara is between November and December when the weather
+                                is pleasant. The village festival during September is a particularly vibrant time to
+                                experience local culture.</p>
                         </div>
                     </div>
                     <h4><i class="fas fa-utensils me-2"></i>Local Food</h4>
                     <div class="card mb-4">
                         <div class="card-body">
-                            <p>Don't miss trying our local specialties like Ghee-Roast, Biriyani, and Porotta & Beef-fry from  The Nihmath hotel, is highly recommended for authentic village cuisine.</p>
+                            <p>Don't miss trying our local specialties like Ghee-Roast, Biriyani, and Porotta & Beef-fry
+                                from The Nihmath hotel, is highly recommended for authentic village cuisine.</p>
                         </div>
                     </div>
                     <h4><i class="fas fa-bed me-2"></i>Places to Stay</h4>
                     <div class="card">
                         <div class="card-body">
-                            <p>While Thottasseriara has limited lodging options, homestays are available with local families. Nearby Kunnumpuram offers hotels ranging from budget to mid-range.</p>
+                            <p>While Thottasseriara has limited lodging options, homestays are available with local
+                                families. Nearby Kunnumpuram offers hotels ranging from budget to mid-range.</p>
                         </div>
                     </div>
                 </div>
@@ -968,9 +1028,12 @@ strong {
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-map-marker-alt me-2"></i>Location Map</h5>
+                            <a href=""></a>
                             <div class="ratio ratio-16x9">
                                 <!-- Replace with your actual Google Maps embed code -->
-                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                    allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
@@ -996,10 +1059,10 @@ strong {
                                     <label for="message" class="form-label">Message</label>
                                     <textarea class="form-control" id="message" rows="3" required></textarea>
                                 </div>
-                                <!-- From Uiverse.io by satyamchaudharydev --> 
-<button>
-  <p>Submit</p>
-</button>
+                                <!-- From Uiverse.io by satyamchaudharydev -->
+                                <button>
+                                    <p>Submit</p>
+                                </button>
 
                             </form>
                         </div>
@@ -1010,9 +1073,9 @@ strong {
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h5 class="card-title"> Kannamangalam Village  Office</h5>
+                            <h5 class="card-title"> Kannamangalam Village Office</h5>
                             <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>Kannamangalam cherur</p>
-                            
+
                             <div class="mt-3">
                                 <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -1064,4 +1127,9 @@ strong {
     <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        </body>
+</html>
