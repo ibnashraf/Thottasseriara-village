@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thottasseriara - The Beautiful Village</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -60,6 +61,17 @@
             padding-bottom: 15px;
             margin-bottom: 30px;
             text-align: center;
+        }
+
+        #home {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
         .section-title:after {
@@ -185,64 +197,64 @@
         }
 
         /* From Uiverse.io by satyamchaudharydev */
-     /* From Uiverse.io by eirikvold */ 
-button {
-  font-family: inherit;
-  font-size: 18px;
-  background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
-  color: white;
-  padding: 0.8em 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
-}
+        /* From Uiverse.io by eirikvold */
+        button {
+            font-family: inherit;
+            font-size: 18px;
+            background: linear-gradient(to bottom, #00fc1d 80%,);
+            color: white;
+            padding: 0.8em 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
 
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
 
-button:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-button span {
-  display: block;
-  margin-left: 0.4em;
-  transition: all 0.3s;
-}
+        button span {
+            display: block;
+            margin-left: 0.4em;
+            transition: all 0.3s;
+        }
 
-button svg {
-  width: 18px;
-  height: 18px;
-  fill: white;
-  transition: all 0.3s;
-}
+        button svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+            transition: all 0.3s;
+        }
 
-button .svg-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin-right: 0.5em;
-  transition: all 0.3s;
-}
+        button .svg-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-right: 0.5em;
+            transition: all 0.3s;
+        }
 
-button:hover .svg-wrapper {
-  background-color: rgba(255, 255, 255, 0.5);
-}
+        button:hover .svg-wrapper {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
 
-button:hover svg {
-  transform: rotate(45deg);
-}
+        button:hover svg {
+            transform: rotate(45deg);
+        }
 
 
 
@@ -265,8 +277,7 @@ button:hover svg {
                 linear-gradient(137.48deg,
                     #ffdb3b 10%,
                     #fe53bb 45%,
-                    #8f51ea 67%,
-                    #0044ff 87%);
+                );
             background-origin: border-box;
             background-clip: content-box, border-box;
         }
@@ -466,7 +477,8 @@ button:hover svg {
     </nav>
 
     <!-- Hero Section / Image Carousel -->
-    <section id="home" class="hero-section" style="background-image: url('https://www.treebo.com/blog/wp-content/uploads/2018/06/The-16-Most-Beautiful-Villages-In-India.jpg');">
+    <section id="home" class="hero-section"
+        style="background-image: url('https://www.treebo.com/blog/wp-content/uploads/2018/06/The-16-Most-Beautiful-Villages-In-India.jpg');">
         <div class="container">
             <h1 class="hero-title">Welcome to Thottasseriara</h1>
             <p class="hero-subtitle">A beautiful village with rich culture and heritage</p>
@@ -480,34 +492,35 @@ button:hover svg {
 
     <!-- About the Village -->
     <section id="about" class="py-5">
-        <div class="container"  style="background-image: url('https://img.freepik.com/premium-photo/beautiful-scenery-morning-beautiful-village-nature-indonesia_1048944-30713663.jpg'); opacity: 80;">
+        <div class="container"
+            style="background-image: url('https://img.freepik.com/premium-photo/beautiful-scenery-morning-beautiful-village-nature-indonesia_1048944-30713663.jpg'); opacity: 80;">
             <h2 class="section-title">About Thottasseriara</h2>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-black">
                     <h3>Our History</h3>
-                    <p>Thottasseriara is a picturesque village with a rich history dating back centuries. The name
-                        "Thottasseriara" is believed to have originated from [explain origin of name]. Our village has
+                    <p>Thottasseriara is a picturesque village with a rich history dating back centuries.Our village has
                         maintained its traditional charm while embracing modern development.</p>
                     <p>The village has a population of approximately 6000 people, primarily
                         engaged in Agriculture. The cultural fabric of Thottasseriara is woven with
                         traditions of Onam, Christmas, Bakrreed, etc</p>
                     <h3 class="mt-4">Cultural Background</h3>
                     <p>Thottasseriara is known for its vibrant cultural heritage. The village celebrates various
-                        festivals throughout the year, including Onam Eid Christmas. Traditional art forms 
-                        are also  preserved and practiced by the villagers.</p>
+                        festivals throughout the year, including Onam Eid Christmas. Traditional art forms
+                        are also preserved and practiced by the villagers.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Location Map</h5>
-                            <div class="ratio ratio-16x9">
+                            <div class="ratio ratio-21x9">
                                 <!-- Replace with your actual Google Maps embed code -->
-                                 <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.28427238992!2d75.95120652355679!3d11.092178303293224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64c2e5e556fdb%3A0x7ec9da30f015992a!2sThottasseriyara%2C%20Kannamangalam%2C%20Kerala%20676305!5e0!3m2!1sen!2sin!4v1747993886252!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                        allowfullscreen="" loading="lazy"></iframe>
                             </div>
                             </a>
-                            <p class="card-text mt-3">Thottasseriara is located in Malappuram, Kerale,
-                                surrounded by  many towns and cities</p>
+                          
                         </div>
                     </div>
                 </div>
@@ -530,7 +543,8 @@ button:hover svg {
                             <h5 class="card-title">Arakkal Thamburatty Temple</h5>
                             <p class="card-text">The ancient Arakkal Temple is the spiritual heart of our village, known
                                 for its beautiful architecture and annual festival celebrations.</p>
-                            <a href="https://maps.app.goo.gl/zg5ghyZAt4Z4tMwW9" class="btn btn-outline-primary">Learn More</a>
+                            <a href="https://maps.app.goo.gl/zg5ghyZAt4Z4tMwW9" class="btn btn-outline-primary">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -544,7 +558,8 @@ button:hover svg {
                             <h5 class="card-title">Juma Masjid</h5>
                             <p class="card-text">The historic Juma Masjid serves the Muslim community and stands as a
                                 symbol of religious harmony in our village.</p>
-                            <a href="https://maps.app.goo.gl/hwFvYH5Z28XqL1nf8" class="btn btn-outline-primary">Learn More</a>
+                            <a href="https://maps.app.goo.gl/hwFvYH5Z28XqL1nf8" class="btn btn-outline-primary">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -558,7 +573,8 @@ button:hover svg {
                             <h5 class="card-title">St. Marys Church</h5>
                             <p class="card-text">This beautiful church with its colonial architecture is a center for
                                 the Christian community and a peaceful place for prayer.</p>
-                            <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6" class="btn btn-outline-primary">Learn More</a>
+                            <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6" class="btn btn-outline-primary">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -574,11 +590,12 @@ button:hover svg {
                             <h5 class="card-title">Thottasseriara Streamm</h5>
                             <p class="card-text">The lifeline of our village, this stream provides water for irrigation
                                 and is a scenic spot for enjoying nature.</p>
-                            <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6" class="btn btn-outline-primary">Learn More</a>
+                            <a href="https://maps.app.goo.gl/6GCHP4qbHpAhXnXF6" class="btn btn-outline-primary">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
@@ -648,7 +665,7 @@ button:hover svg {
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWBLA15Vj6CJv1D08IPgItMNjyMEIXDUnUg&s"
-                                    class="img-fluid rounded-start h-100" alt="Business Photo">
+                                    class="img-fluid p-4 h-100 w-100" alt="Business Photo" >
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -668,7 +685,7 @@ button:hover svg {
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="https://static.vecteezy.com/system/resources/previews/028/860/201/non_2x/tailor-shop-sale-banner-tailor-tools-and-sewing-machine-vector.jpg"
-                                    class="img-fluid rounded-start h-100" alt="Business Photo">
+                                    class="img-fluid p-4 h-100 w-100" alt="Business Photo" >
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -690,7 +707,7 @@ button:hover svg {
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="https://files.yappe.in/place/full/al-raydhan-kuzhi-mandi-1802783.webp"
-                                    class="img-fluid rounded-start h-100" alt="Business Photo">
+                                    class="img-fluid p-4 h-100 w-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -710,7 +727,7 @@ button:hover svg {
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="https://content.jdmagicbox.com/comp/malappuram/x7/9999px483.x483.180222192939.u3x7/catalogue/auto-gurd-car-accessories-malappuram-9ka17.jpg"
-                                    class="img-fluid rounded-start h-100" alt="Business Photo">
+                                    class="img-fluid p-4 w-100 h-100" alt="Business Photo">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -729,57 +746,63 @@ button:hover svg {
         </div>
     </section>
 
- <!-- Notable People -->
-<section id="people" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Notable People</h2>
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex flex-nowrap overflow-auto pb-3" style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div class="d-flex">
-                        <a href="tel:+919446972120" class="text-decoration-none me-3 flex-shrink-0" style="width: 280px;">
-                            <div class="card person-card h-100">
-                                <div class="card-body">
-                                    <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020011900201.jpg"
-                                        alt="Person" class="person-img img-fluid">
-                                    <h5 class="card-title">Aboobacker Master</h5>
-                                    <p class="card-text text-muted">Block Member </p>
-                                    <p class="card-text">He was the the standing committee chairman
-                                        & Member in local self GOVT
-                                    </p>
+    <!-- Notable People -->
+    <section id="people" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Notable People</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-nowrap overflow-auto pb-3"
+                        style="scrollbar-width: none; -ms-overflow-style: none;">
+                        <div class="d-flex">
+                            <a href="tel:+919446972120" class="text-decoration-none me-3 flex-shrink-0"
+                                style="width: 280px;">
+                                <div class="card person-card h-100">
+                                    <div class="card-body">
+                                        <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020011900201.jpg"
+                                            alt="Person" class="person-img img-fluid">
+                                        <h5 class="card-title">Aboobacker Master</h5>
+                                        <p class="card-text text-muted">Block Member </p>
+                                        <p class="card-text">He was the the standing committee chairman
+                                            & Member in local self GOVT
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        
-                        <a href="tel:+91994755663" class="text-decoration-none me-3 flex-shrink-0" style="width: 280px;">
-                            <div class="card person-card h-100">
-                                <div class="card-body">
-                                    <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020096302001.jpg"
-                                        alt="Person" class="person-img img-fluid">
-                                    <h5 class="card-title">Sankaran Chalil</h5>
-                                    <p class="card-text text-muted">Division Member</p>
-                                    <p class="card-text">Working as a division member for the progress of the village</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
 
-                        <a href="tel:+919495365450" class="text-decoration-none flex-shrink-0" style="width: 280px;">
-                            <div class="card person-card h-100">
-                                <div class="card-body">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTseBHTIpKcTn8gJDGMpT_e5bsRvmY_hbgXAw&s"
-                                        alt="Person" class="person-img img-fluid">
-                                    <h5 class="card-title">Shamsudheen Cheruvadi</h5>
-                                    <p class="card-text text-muted">Politician and teacher</p>
-                                    <p class="card-text">Great Politician and Working as a teacher in village school.</p>
+                            <a href="tel:+91994755663" class="text-decoration-none me-3 flex-shrink-0"
+                                style="width: 280px;">
+                                <div class="card person-card h-100">
+                                    <div class="card-body">
+                                        <img src="https://lsgkerala.gov.in/electionupdates/uploads/photos/2020096302001.jpg"
+                                            alt="Person" class="person-img img-fluid">
+                                        <h5 class="card-title">Sankaran Chalil</h5>
+                                        <p class="card-text text-muted">Division Member</p>
+                                        <p class="card-text">Working as a division member for the progress of the
+                                            village</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+
+                            <a href="tel:+919495365450" class="text-decoration-none flex-shrink-0"
+                                style="width: 280px;">
+                                <div class="card person-card h-100">
+                                    <div class="card-body">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTseBHTIpKcTn8gJDGMpT_e5bsRvmY_hbgXAw&s"
+                                            alt="Person" class="person-img img-fluid">
+                                        <h5 class="card-title">Shamsudheen Cheruvadi</h5>
+                                        <p class="card-text text-muted">Politician and teacher</p>
+                                        <p class="card-text">Great Politician and Working as a teacher in village
+                                            school.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Local Facilities -->
     <section id="facilities" class="py-5 bg-light">
@@ -796,7 +819,7 @@ button:hover svg {
                                 <p class="mb-1"><i class="fas fa-clock me-2"></i>9:00 AM - 4:00 PM (Mon-Fri)</p>
                                 <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 97446 68899</p>
                             </div>
-                            
+
                             <div class="facility-item">
                                 <h6>Thottasseriara Upper Primary School</h6>
                                 <p class="mb-1">5th to 7th standard (State syllabus)</p>
@@ -827,7 +850,7 @@ button:hover svg {
                 </div>
             </div>
             <div class="row mt-4">
-                
+
                 <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -891,24 +914,27 @@ button:hover svg {
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h4><i class="fas fa-calendar-alt me-2"></i>Best Time to Visit</h4>
+                    
                     <div class="card mb-4">
                         <div class="card-body">
+                            <h4><i class="fas fa-calendar-alt me-2"></i>Best Time to Visit</h4>
                             <p>The ideal time to visit Thottasseriara is between November and December when the weather
                                 is pleasant. The village festival during September is a particularly vibrant time to
                                 experience local culture.</p>
                         </div>
                     </div>
-                    <h4><i class="fas fa-utensils me-2"></i>Local Food</h4>
+                    
                     <div class="card mb-4">
                         <div class="card-body">
+                            <h4><i class="fas fa-utensils me-2"></i>Local Food</h4>
                             <p>Don't miss trying our local specialties like Ghee-Roast, Biriyani, and Porotta & Beef-fry
                                 from The Nihmath hotel, is highly recommended for authentic village cuisine.</p>
                         </div>
                     </div>
-                    <h4><i class="fas fa-bed me-2"></i>Places to Stay</h4>
+                    
                     <div class="card">
                         <div class="card-body">
+                            <h4><i class="fas fa-bed me-2"></i>Places to Stay</h4>
                             <p>While Thottasseriara has limited lodging options, homestays are available with local
                                 families. Nearby Kunnumpuram offers hotels ranging from budget to mid-range.</p>
                         </div>
@@ -927,13 +953,13 @@ button:hover svg {
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-map-marker-alt me-2"></i>Location Map</h5>
-                            <a href="https://maps.app.goo.gl/xxKKeUr9qxFMHy8E6">
-                            <div class="ratio ratio-16x9">
-                                <!-- Replace with your actual Google Maps embed code -->
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                                    allowfullscreen="" loading="lazy"></iframe>
-                            </div>
+                            <a href="https://maps.app.goo.gl/oubXYEw2HXbwy7AF6">
+                                <div class="ratio ratio-16x9">
+                                    <!-- Replace with your actual Google Maps embed code -->
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.965062456042!2d76.3414563152876!3d10.028782992833936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c26c8a7a7c9%3A0x8e9e9e9e9e9e9e9e!2sThottasseriara!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                        allowfullscreen="" loading="lazy"></iframe>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -960,18 +986,15 @@ button:hover svg {
                                     <textarea class="form-control" id="message" rows="3" required></textarea>
                                 </div>
                                 <!-- From Uiverse.io by satyamchaudharydev -->
-                                <!-- From Uiverse.io by eirikvold --> 
-<button>
-  <div class="svg-wrapper-1">
-    <div class="svg-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-        <path fill="none" d="M0 0h24v24H0z"></path>
-        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-      </svg>
-    </div>
-  </div>
-  <span>Send</span>
-</button>
+                                <!-- From Uiverse.io by eirikvold -->
+                                <button>
+                                    <div class="svg-wrapper-1">
+                                        <div class="svg-wrapper">
+                                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+                                        </div>
+                                    </div>
+                                    <span class="text-black">Send</span>
+                                </button>
 
                             </form>
                         </div>
@@ -985,7 +1008,7 @@ button:hover svg {
                             <h5 class="card-title"> Kannamangalam Village Office</h5>
                             <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>Kannamangalam cherur</p>
 
-                         
+
                         </div>
                     </div>
                 </div>
@@ -1009,7 +1032,7 @@ button:hover svg {
                 <div class="col-md-4">
                     <h5>Contact</h5>
                     <ul class="list-unstyled">
-                        
+
                         <li><i class="fas fa-envelope me-2"></i> info@thottasseriara.com</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i> Thottasseriara, Malappuram, Kerala</li>
                     </ul>
@@ -1017,9 +1040,10 @@ button:hover svg {
                 <div class="col-md-4">
                     <h5>Follow Us</h5>
                     <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="tel +91 8921394993" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/ibn__ashraf?igsh=MWt1aXRvanc3Ym1qdQ==" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    
+                    <a href="wa.me +91 8921394993" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ibn__ashraf?igsh=MWt1aXRvanc3Ym1qdQ==" class="social-icon"><i
+                            class="fab fa-instagram"></i></a>
+
                 </div>
             </div>
             <hr class="my-4 bg-light">
@@ -1034,7 +1058,8 @@ button:hover svg {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        
 
-        </body>
+
+</body>
+
 </html>
